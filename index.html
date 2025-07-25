@@ -1,11 +1,1188 @@
 <!DOCTYPE html>
+<!--
+© AltiBedrift – Levert av Haut Forvalting AS (Org.nr: 931 603 760)
+CONFIDENTIAL: Proprietary business logic. Uautorisert kopiering/redistribusjon er forbudt.
+Lisensiert til Fjordblikk / Masfjorden kommune iht. avtale [[DD.MM.YYYY]].
+Tracking-ID: abtf-[[UNIK_HASH]]
+-->
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <title>Fjordblikk</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & AI: Kjerne-metadata -->
+    <title>Fjordblikk – Dagsturhytta i Masfjorden | Book din unike opplevelse</title>
+    <meta name="description" content="Opplev Fjordblikk, dagsturhytta på Grøttneset i Masfjorden. Omgitt av sjø på tre sider. Book ditt opphold for en uforglemmelig naturopplevelse.">
+    <link rel="canonical" href="[[KANONISK_URL]]">
+    
+    <!-- Google Search Console Verifikasjon (Placeholder) -->
+    <meta name="google-site-verification" content="[[GSC_CODE]]">
+
+    <!-- OpenGraph & Twitter Cards for deling -->
+    <meta property="og:title" content="Fjordblikk – Dagsturhytta i Masfjorden">
+    <meta property="og:description" content="Omgitt av sjø på tre sider – opplev roen ved Grøttneset.">
+    <meta property="og:image" content="https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-4-mjEGK1r3oMUML8jW.webp">
+    <meta property="og:url" content="[[KANONISK_URL]]">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="nb_NO">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fjordblikk – Dagsturhytta i Masfjorden">
+    <meta name="twitter:description" content="Omgitt av sjø på tre sider – opplev roen ved Grøttneset.">
+    <meta name="twitter:image" content="https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-4-mjEGK1r3oMUML8jW.webp">
+
+    <!-- Preconnect for ytelse -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- EmailJS (for booking-skjema) -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Google Tag Manager (GTM) Head (Placeholder) -->
+    <script>
+        // © AltiBedrift – Haut Forvalting AS (Org.nr: 931 603 760)
+        // GTM Snippet - Tracking-ID: abtf-[[UNIK_HASH]]
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','[[GTM-ID]]');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Schema.org JSON-LD for SEO & AI -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Fjordblikk Dagsturhytte",
+      "description": "Dagsturhytte i Masfjorden med panoramautsikt over fjorden, tilgjengelig for dagsbesøk og booking.",
+      "image": "https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-4-mjEGK1r3oMUML8jW.webp",
+      "telephone": "[[TELEFONNUMMER]]",
+      "email": "[[EPOSTADRESSE]]",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Grøttneset",
+        "addressLocality": "Masfjorden",
+        "postalCode": "5980",
+        "addressCountry": "NO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "60.8166",
+        "longitude": "5.2833"
+      },
+      "url": "[[KANONISK_URL]]",
+      "priceRange": "Gratis / Booking for arrangement",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "[[KANONISK_URL]]"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Kor parkerer eg for å gå til Fjordblikk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Du kan parkere på den oppmerka parkeringsplassen ved fylkesvegen på Kvingo. Derfra er det ein godt skilta og universelt utforma grusveg på 1,4 km fram til hytta."
+        }
+      },{
+        "@type": "Question",
+        "name": "Er hytta open heile året?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Fjordblikk er ei dagsturhytte som er open for alle, heile året. For spesielle arrangement eller grupper, anbefaler vi å nytte bookingsystemet."
+        }
+      },{
+        "@type": "Question",
+        "name": "Kan eg ta med hund til hytta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hundar er velkomne i området, men det er bandtvang. Av omsyn til allergikarar og reinhald, er det ikkje tillate med hund inne i sjølve hytta."
+        }
+      },{
+        "@type": "Question",
+        "name": "Korleis bookar eg hytta for ei gruppe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Du kan enkelt sende ein førespurnad via booking-seksjonen på denne nettsida. Velg dato i kalenderen, fyll ut skjemaet, så tek vi kontakt med deg for å bekrefte."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        /*
+        © AltiBedrift – Haut Forvalting AS (Org.nr: 931 603 760)
+        CONFIDENTIAL: Proprietary business logic.
+        Licensed to Fjordblikk – [[DD.MM.YYYY]]
+        Tracking-ID: abtf-[[UNIK_HASH]]
+        */
+
+        :root {
+            --primary-text: #FFFFFF;
+            --secondary-text: #000000;
+            --accent-color: #D14124;
+            --accent-hover: #A9341E;
+            --bg-glass: rgba(0, 0, 0, 0.4);
+            --bg-glass-light: rgba(255, 255, 255, 0.1);
+            --border-color: rgba(255, 255, 255, 0.2);
+            --font-family: 'Poppins', sans-serif;
+            --max-width: 1100px;
+            --base-bg-color: #0a0a0a;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 60px; /* Offset for sticky header */
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--base-bg-color);
+            color: var(--primary-text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* --- Generelle stiler --- */
+        h1, h2, h3 {
+            font-weight: 600;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+        }
+
+        h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: clamp(1rem, 1.5vw, 1.1rem);
+            max-width: 65ch;
+        }
+        
+        /* --- Seksjons-container & Flytende overganger --- */
+        .section-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 2rem;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed; /* Parallax-effekt */
+            overflow: hidden;
+        }
+        
+        .section-container::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.3);
+            z-index: 1;
+        }
+        
+        /* NYTT: Gradient for myk overgang nederst */
+        .section-container:not(#hjem):not(#faq):not(#kontakt)::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20vh; /* Høyde på overtoningen */
+            background: linear-gradient(to top, var(--base-bg-color) 5%, transparent);
+            z-index: 3; /* Over bildet, men under innholdet */
+            pointer-events: none;
+        }
+
+        .content-box {
+            position: relative;
+            z-index: 4; /* Sørger for at innholdet er over gradienten */
+            background: var(--bg-glass);
+            padding: clamp(1.5rem, 5vw, 3rem);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            max-width: var(--max-width);
+            text-align: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--accent-color);
+            color: var(--primary-text);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-3px);
+        }
+        
+        /* --- Header & Navigasjon --- */
+        .main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 2rem;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            transition: background-color 0.4s ease;
+        }
+
+        .main-header.scrolled {
+            background-color: var(--bg-glass);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-text);
+            text-decoration: none;
+        }
+
+        .main-nav a {
+            color: var(--primary-text);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 400;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        .main-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-color);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+
+        .main-nav a:hover::after,
+        .main-nav a.active::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .mobile-nav-toggle {
+            display: none;
+        }
+        
+        /* --- Hero Seksjon med 3D-effekt --- */
+        #hjem {
+            perspective: 1000px;
+        }
+
+        #hjem .content-box {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
+        
+        .hero-image-wrapper {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            transition: transform 0.1s linear;
+        }
+
+        .hero-image {
+            width: 110%; /* Litt større for å unngå kanter ved tilt */
+            height: 110%;
+            object-fit: cover;
+            position: absolute;
+            top: -5%; left: -5%;
+        }
+
+        #hjem h1 {
+            margin-bottom: 0.5rem;
+        }
+        
+        #hjem p {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        /* --- Seksjonsspesifikke bakgrunner (lazy-loaded) --- */
+        #hjem { background-image: url('https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-4-mjEGK1r3oMUML8jW.webp'); }
+        #opplevelse[data-bg] { background-image: url('https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-m7VbX71nXytX3MWD.webp'); }
+        #tilkomst[data-bg] { background-image: url('https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-5-dOqDgOKLZPFZ3WB4.webp'); }
+        #stien[data-bg] { background-image: url('https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-1-AGBbgDJZExT8noEZ.webp'); }
+        #fasiliteter[data-bg] { background-image: url('https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-2-A3Q7VLMz2MCG1apx.webp'); }
+        #booking[data-bg] { background-image: url('https://assets.zyrosite.com/m7V3o8wOojsqzqQ8/unnamed-3-m5KnQ53NEquXj59v.webp'); }
+        #faq, #kontakt { background-color: #111; }
+
+        /* --- Fasiliteter & Tilkomst Lister med IKONER --- */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: left;
+            margin-top: 2rem;
+        }
+        
+        .info-item h3 {
+            color: var(--primary-text); /* Endret farge for å la ikonet stå ut */
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        .info-icon {
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+
+        .info-icon path, .info-icon circle, .info-icon rect {
+             stroke: var(--accent-color);
+             stroke-width: 1.5;
+             fill: none;
+        }
+
+        /* --- Booking Modul --- */
+        #booking-module {
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .booking-step {
+            display: none;
+        }
+        .booking-step.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Kalender */
+        .calendar {
+            background: var(--bg-glass-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .calendar-header button {
+            background: none;
+            border: none;
+            color: var(--primary-text);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        .calendar-weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            text-align: center;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #ccc;
+        }
+        .calendar-days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+        .calendar-day {
+            padding: 0.75rem 0;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color 0.2s;
+        }
+        .calendar-day:not(.empty):not(.disabled):hover {
+            background-color: var(--bg-glass);
+        }
+        .calendar-day.selected {
+            background-color: var(--accent-color);
+            color: var(--primary-text);
+        }
+        .calendar-day.disabled {
+            color: #666;
+            cursor: not-allowed;
+            text-decoration: line-through;
+        }
+        .calendar-day.empty {
+            cursor: default;
+        }
+
+        /* Skjema */
+        .booking-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            text-align: left;
+            margin-top: 2rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        .booking-form label {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .booking-form input, .booking-form textarea {
+            background: var(--bg-glass-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px;
+            color: var(--primary-text);
+            font-family: var(--font-family);
+        }
+        .booking-form input:focus, .booking-form textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+        }
+        .gdpr-check {
+            grid-column: 1 / -1;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .booking-summary {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: var(--bg-glass-light);
+            border-radius: 8px;
+        }
+        
+        .booking-nav {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #confirmation-message {
+            display: none;
+            text-align: center;
+        }
+
+        /* --- FAQ --- */
+        .faq-item {
+            background: #222;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 1.5rem;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-text);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, padding 0.5s ease;
+        }
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            max-width: 100%;
+        }
+
+        /* --- Kontakt & Kart --- */
+        #kontakt .content-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            text-align: left;
+        }
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden;
+            height: 400px;
+        }
+        .map-container iframe {
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* --- Sticky CTA --- */
+        .sticky-cta {
+            position: fixed;
+            right: 2rem;
+            bottom: 2rem;
+            z-index: 999;
+            padding: 10px 20px;
+            background-color: var(--accent-color);
+            color: var(--primary-text);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem; /* Økt gap for ikon */
+            animation: subtle-wave 2.5s infinite ease-in-out;
+            transition: transform 0.3s ease;
+        }
+        
+        .sticky-cta .icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .sticky-cta:hover {
+            transform: scale(1.1);
+            animation-play-state: paused;
+        }
+
+        @keyframes subtle-wave {
+            0%, 100% { transform: rotate(0deg); }
+            5% { transform: rotate(5deg); }
+            10% { transform: rotate(-4deg); }
+            15% { transform: rotate(3deg); }
+            20% { transform: rotate(0deg); }
+        }
+
+        /* --- Footer --- */
+        .main-footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #000;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        /* --- Responsivt design --- */
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none; /* Simplifisert for demo, kan utvides med hamburgermeny */
+            }
+            #kontakt .content-box {
+                grid-template-columns: 1fr;
+            }
+            .booking-form {
+                grid-template-columns: 1fr;
+            }
+            .sticky-cta {
+                left: 50%;
+                transform: translateX(-50%);
+                right: auto;
+                bottom: 1rem;
+                width: 90%;
+                max-width: 300px;
+                text-align: center;
+                justify-content: center;
+            }
+            .sticky-cta:hover {
+                transform: translateX(-50%) scale(1.05);
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Nettsiden er live!</h1>
-  <p>Velkommen til Fjordblikk – levert av AltiBedrift.</p>
+    <!-- Google Tag Manager (noscript) (Placeholder) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=[[GTM-ID]]"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header -->
+    <header class="main-header" id="main-header">
+        <a href="#hjem" class="logo">Fjordblikk</a>
+        <nav class="main-nav" id="main-nav">
+            <a href="#opplevelse">Opplevelsen</a>
+            <a href="#tilkomst">Tilkomst</a>
+            <a href="#fasiliteter">Fasiliteter</a>
+            <a href="#booking">Booking</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+        <button class="mobile-nav-toggle" aria-label="Åpne meny">☰</button>
+    </header>
+
+    <main>
+        <!-- Seksjon 1: Hjem (Hero) -->
+        <section id="hjem" class="section-container">
+            <div class="hero-image-wrapper">
+                <!-- Bildet styres av CSS for parallax-effekten -->
+            </div>
+            <div class="content-box">
+                <h1>Fjordblikk – Dagsturhytta i Masfjorden</h1>
+                <p>Omgitt av sjø på tre sider – opplev roen ved Grøttneset</p>
+                <a href="#booking" class="btn">Book hytta nå</a>
+            </div>
+        </section>
+
+        <!-- Seksjon 2: Opplevelse -->
+        <section id="opplevelse" class="section-container lazy-bg">
+            <div class="content-box">
+                <h2>En pause fra hverdagen</h2>
+                <p>Fjordblikk er ikkje berre ei hytte, det er ein tilstand. Her, på tuppen av Grøttneset, kan du senke skuldrene og la blikket kvile på fjorden som strekker seg mot horisonten. Lytt til stilla, bølgeskvulp og fuglesong. Perfekt for rekreasjon, inspirasjon og gode samtalar.</p>
+            </div>
+        </section>
+
+        <!-- Seksjon 3: Tilkomst -->
+        <section id="tilkomst" class="section-container lazy-bg">
+            <div class="content-box">
+                <h2>Slik kjem du deg hit</h2>
+                <p>Veien til Fjordblikk er en del av opplevelsen. Den vakre stien er universelt utformet og passer for alle.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>
+                            <svg class="info-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.389 10.222h-3.444v-3.444a1.111 1.111 0 0 0-2.222 0v3.444H8.278a1.111 1.111 0 0 0 0 2.222h5.445v3.445a1.111 1.111 0 0 0 2.222 0v-3.445h3.444a1.111 1.111 0 1 0 0-2.222z" stroke-width="0" fill="var(--accent-color)"/><path d="M17.167 3H6.833C4.723 3 3 4.723 3 6.833v10.334C3 19.277 4.723 21 6.833 21h10.334c2.11 0 3.833-1.723 3.833-3.833V6.833C21 4.723 19.277 3 17.167 3zm1.666 14.167c0 1.008-.818 1.826-1.826 1.826H6.992c-1.008 0-1.826-.818-1.826-1.826V7.008c0-1.008.818-1.826 1.826-1.826h10.012c1.008 0 1.826.818 1.826 1.826v10.159z" stroke-width="0" fill="var(--accent-color)"/></svg>
+                            Med bil
+                        </h3>
+                        <p>Køyr til Kvingo i Masfjorden. Parkering på oppmerka plass ved Fv570. Herifrå er det skilta mot Grøttneset og Fjordblikk.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>
+                            <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M15.42 16.22c.22.22.22.58 0 .79l-2.12 2.12c-.22.22-.58.22-.79 0L10.4 17c-.59-.59-.59-1.54 0-2.12l2.12-2.12c.59-.59 1.54-.59 2.12 0l.78.78c.22.22.22.58 0 .79l-.78.78c-.22.22-.58.22-.79 0l-1.06-1.06c-.22-.22-.58-.22-.79 0s-.22.58 0 .79l1.06 1.06c.22.22.58.22.79 0l.78-.78zm-3.54-3.54c-.22-.22-.22-.58 0-.79l2.12-2.12c.22-.22.58-.22.79 0l2.12 2.12c.59.59.59 1.54 0 2.12l-2.12 2.12c-.59.59-1.54.59-2.12 0l-.78-.78c-.22-.22-.22-.58 0-.79l.78-.78c.22-.22.58-.22.79 0l1.06 1.06c.22.22.58.22.79 0s.22-.58 0-.79l-1.06-1.06c-.22-.22-.58-.22-.79 0l-.78.78zM8.58 9.22c.22.22.22.58 0 .79l-2.12 2.12c-.22.22-.58.22-.79 0L3.56 10c-.59-.59-.59-1.54 0-2.12L5.68 5.76c.59-.59 1.54-.59 2.12 0l.78.78c.22.22.22.58 0 .79l-.78.78c-.22.22-.58.22-.79 0L6.05 7.15c-.22-.22-.58-.22-.79 0s-.22.58 0 .79l1.06 1.06c.22.22.58.22.79 0l.78-.78z"/></svg>
+                            Stien til fots
+                        </h3>
+                        <p>Frå parkeringsplassen følgjer du den 1,4 km lange grusvegen. Turen tek ca. 20-30 minutt i roleg tempo og er tilgjengeleg for barnevogn og rullestol.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>
+                            <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21.49 13.37a1.5 1.5 0 0 0-1-1.37l-2.83-.94a1.5 1.5 0 0 1-1.17-1.17l-.94-2.83a1.5 1.5 0 0 0-2.74 0l-.94 2.83a1.5 1.5 0 0 1-1.17 1.17l-2.83.94a1.5 1.5 0 0 0 0 2.74l2.83.94a1.5 1.5 0 0 1 1.17 1.17l.94 2.83a1.5 1.5 0 0 0 2.74 0l.94-2.83a1.5 1.5 0 0 1 1.17-1.17l2.83-.94a1.5 1.5 0 0 0 1-1.37zM4.17 4.17a3 3 0 0 1 4.24 0l1.1 1.1a1 1 0 0 1-1.42 1.42L7 5.58a1 1 0 0 0-1.41 0L4.17 7A1 1 0 1 1 2.76 5.58l1.41-1.41zM7 8.42l-1.41 1.41a1 1 0 1 1-1.42-1.42L5.58 7a1 1 0 0 0 0-1.41L4.17 4.17a1 1 0 1 1 1.41-1.41l1.42 1.41a3 3 0 0 1 0 4.25z"/></svg>
+                            Med båt/kajakk
+                        </h3>
+                        <p>Det er mogleg å legge til med småbåt eller kajakk ved flytebrygga nedanfor hytta. Ei fantastisk måte å oppleve kystlandskapet på.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seksjon 4: Stien -->
+        <section id="stien" class="section-container lazy-bg">
+            <div class="content-box">
+                <h2>Langs stien til Grøttneset</h2>
+                <p>Turen ut til hytta går gjennom eit ope og vakkert kystlandskap. Stien er lett å gå, med berre 5 meter stigning totalt. Undervegs kan du nyte utsikta og kanskje sjå havørn sveve over deg.</p>
+            </div>
+        </section>
+
+        <!-- Seksjon 5: Fasiliteter -->
+        <section id="fasiliteter" class="section-container lazy-bg">
+            <div class="content-box">
+                <h2>Inne i og rundt hytta</h2>
+                <p>Hytta er utstyrt for å gje deg eit komfortabelt dagsbesøk.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>
+                            <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 2.5a1 1 0 0 0-1 0L3 8.85a1 1 0 0 0 .5 1.85H4v9.3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-9.3h.5a1 1 0 0 0 .5-1.85zM18 19H6v-8h12zM9 13a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1z"/></svg>
+                            Vedomn
+                        </h3>
+                        <p>For kalde dagar finst det ein vedomn som raskt varmar opp hytta. Ved er tilgjengeleg.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>
+                            <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zM12 3a9 9 0 0 0-9 9c0 4.5 3 8.5 6 8.5h6c3 0 6-4 6-8.5a9 9 0 0 0-9-9zm4 16.5h-4a7 7 0 0 1-5.6-3H12a4.5 4.5 0 1 0 0-9 4.48 4.48 0 0 0-3 .95A7 7 0 0 1 12 5a7 7 0 0 1 7 7c0 2.2-1 4.9-4 5.5z"/></svg>
+                            Toalett
+                        </h3>
+                        <p>Det er eit moderne, universelt utforma toalett i eit eige bygg like ved hytta.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>
+                            <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><path d="M12 16a4 4 0 0 0 4-4h-4z"/><circle cx="12" cy="8" r="2"/></svg>
+                            Tilgjengelegheit
+                        </h3>
+                        <p>Heile anlegget, inkludert sti, hytte, toalett og uteområde, er universelt utforma.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>
+                            <svg class="info-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21a.999.999 0 0 1-.71-.29l-7-7a1 1 0 0 1 1.42-1.42l5.29 5.3V3a1 1 0 1 1 2 0v14.59l5.29-5.3a1 1 0 0 1 1.42 1.42l-7 7A.999.999 0 0 1 12 21z"/></svg>
+                            Uteområde
+                        </h3>
+                        <p>Rundt hytta er det fleire bålplassar, benkar og eit flott uteområde for aktivitet og avslapping.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seksjon 6: Booking -->
+        <section id="booking" class="section-container lazy-bg">
+            <div class="content-box" id="booking-container">
+                
+                <!-- CONFIDENTIAL MODULE: Bookinglogikk -->
+                <div id="booking-module">
+                    <!-- Steg 1: Kalender -->
+                    <div class="booking-step active" id="step1">
+                        <h2>Send en førespurnad</h2>
+                        <p>Velg ønsket dato i kalenderen for å starte. Hytta er gratis for dagsbesøk, men for arrangement eller større grupper ber vi om en førespurnad.</p>
+                        <div class="calendar">
+                            <div class="calendar-header">
+                                <button id="prev-month">‹</button>
+                                <h3 id="month-year"></h3>
+                                <button id="next-month">›</button>
+                            </div>
+                            <div class="calendar-weekdays">
+                                <div>M</div><div>T</div><div>O</div><div>T</div><div>F</div><div>L</div><div>S</div>
+                            </div>
+                            <div class="calendar-days" id="calendar-days"></div>
+                        </div>
+                        <div class="booking-nav">
+                            <span></span> <!-- for spacing -->
+                            <button class="btn" id="to-step2-btn" disabled>Gå videre</button>
+                        </div>
+                    </div>
+
+                    <!-- Steg 2: Skjema -->
+                    <div class="booking-step" id="step2">
+                        <h2>Dine detaljar</h2>
+                        <div class="booking-summary">
+                            <strong>Valgt dato:</strong> <span id="summary-date"></span>
+                        </div>
+                        <form id="booking-form" class="booking-form">
+                            <div class="form-group">
+                                <label for="name">Fullt navn</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-post</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="guests">Antall personar (ca.)</label>
+                                <input type="number" id="guests" name="guests" min="1" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="purpose">Formål med besøket / Merknader</label>
+                                <textarea id="purpose" name="purpose" rows="4"></textarea>
+                            </div>
+                            <div class="form-group full-width gdpr-check">
+                                <input type="checkbox" id="gdpr" name="gdpr" required>
+                                <label for="gdpr">Eg samtykker til at de lagrar mine data for å behandle førespurnaden.</label>
+                            </div>
+                            <div class="booking-nav full-width">
+                                <button type="button" class="btn" id="back-to-step1-btn">Tilbake</button>
+                                <button type="submit" class="btn">Send førespurnad</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END CONFIDENTIAL MODULE -->
+
+                <div id="confirmation-message">
+                    <h2>Takk for din førespurnad!</h2>
+                    <p>Vi har motteke dine detaljar og vil ta kontakt med deg snarast for å bekrefte. Vi ser fram til å ynskje deg velkommen til Fjordblikk!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seksjon 7: FAQ -->
+        <section id="faq" class="section-container">
+            <div class="content-box">
+                <h2>Ofte stilte spørsmål</h2>
+                <div class="faq-container" id="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">Kor parkerer eg for å gå til Fjordblikk?</button>
+                        <div class="faq-answer">
+                            <p>Du kan parkere på den oppmerka parkeringsplassen ved fylkesvegen på Kvingo. Derfra er det ein godt skilta og universelt utforma grusveg på 1,4 km fram til hytta.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Er hytta open heile året?</button>
+                        <div class="faq-answer">
+                            <p>Ja, Fjordblikk er ei dagsturhytte som er open for alle, heile året. For spesielle arrangement eller grupper, anbefaler vi å nytte bookingsystemet.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Kan eg ta med hund til hytta?</button>
+                        <div class="faq-answer">
+                            <p>Hundar er velkomne i området, men det er bandtvang. Av omsyn til allergikarar og reinhald, er det ikkje tillate med hund inne i sjølve hytta.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Korleis bookar eg hytta for ei gruppe?</button>
+                        <div class="faq-answer">
+                            <p>Du kan enkelt sende ein førespurnad via booking-seksjonen på denne nettsida. Velg dato i kalenderen, fyll ut skjemaet, så tek vi kontakt med deg for å bekrefte.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seksjon 8: Kontakt -->
+        <section id="kontakt" class="section-container">
+            <div class="content-box">
+                <div class="contact-info">
+                    <h2>Kontakt oss</h2>
+                    <p>Fjordblikk vert drifta i samarbeid mellom Masfjorden kommune og Kvinge grendalag. Har du spørsmål, ta gjerne kontakt.</p>
+                    <p><strong>E-post:</strong> [[EPOSTADRESSE]]</p>
+                    <p><strong>Ansvarleg:</strong> Masfjorden kommune</p>
+                    <!-- Placeholder for fremtidig AI Chat Agent -->
+                    <div id="ai-chat" style="margin-top: 1rem; padding: 1rem; border: 1px dashed var(--border-color); border-radius: 8px; text-align: left; display: flex; align-items: center; gap: 1rem;">
+                        <svg viewBox="0 0 24 24" fill="currentColor" style="width: 32px; height: 32px; color: var(--accent-color); flex-shrink: 0;"><path d="M12 2C6.486 2 2 5.589 2 10c0 2.908 1.897 5.515 4.599 6.906C6.764 17.014 6.87 17.06 7 17.11V21a.999.999 0 0 0 1.521.854L12 19.382l3.479 2.472A1 1 0 0 0 17 21v-3.89c.13-.05.236-.096.399-.194C19.103 15.515 22 12.908 22 10c0-4.411-4.486-8-10-8zm0 14c-4.411 0-8-2.691-8-6s3.589-6 8-6 8 2.691 8 6-3.589 6-8 6z"></path><path d="M12.5 9.25a1.5 1.5 0 1 0 0-1.5 1.5 1.5 0 0 0 0 1.5zm-5 0a1.5 1.5 0 1 0 0-1.5 1.5 1.5 0 0 0 0 1.5zm8.5 1.5a1.5 1.5 0 1 0-1.5 0 1.5 1.5 0 0 0 1.5 0z"></path></svg>
+                        <p style="margin: 0;">Snart kjem vår digitale assistent her!</p>
+                    </div>
+                </div>
+                <div class="map-container" id="map-container">
+                    <!-- Google Maps Iframe blir lastet inn her av JS -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Sticky CTA -->
+    <a href="#booking" class="sticky-cta" aria-label="Book hytta">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M10 10.25a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0v-4.5zM14.5 10a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-4.5a.75.75 0 0 1 .75-.75zM3 8a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8zm2 1v9h14V9H5zM8.5 4A.5.5 0 0 1 9 3.5h6a.5.5 0 0 1 0 1H9a.5.5 0 0 1-.5-.5z"/></svg>
+        Book hytta
+    </a>
+
+    <footer class="main-footer">
+        <p>© 2025 AltiBedrift – Levert av Haut Forvalting AS (Org.nr: 931 603 760). Alle rettigheter forbeholdt.</p>
+        <p>Lisensiert, IP-beskyttet produkt. Uautorisert kopiering er forbudt.</p>
+    </footer>
+
+    <script>
+    /*
+    © AltiBedrift – Haut Forvalting AS (Org.nr: 931 603 760)
+    CONFIDENTIAL: Proprietary business logic.
+    Licensed to Fjordblikk – [[DD.MM.YYYY]]
+    Tracking-ID: abtf-[[UNIK_HASH]]
+    */
+    document.addEventListener('DOMContentLoaded', function() {
+
+        // --- Globale variabler og initialisering ---
+        const dataLayer = window.dataLayer || [];
+        
+        // Initialiserer EmailJS med placeholder - bytt ut med ekte nøkler
+        emailjs.init({ publicKey: '[[PUBLIC_KEY]]' });
+
+        // --- Lazy Loading for bakgrunner og kart ---
+        const lazyBgObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const section = entry.target;
+                    section.setAttribute('data-bg', 'loaded'); // Trigger CSS background-image
+                    observer.unobserve(section);
+                }
+            });
+        }, { rootMargin: '0px 0px 200px 0px' });
+
+        document.querySelectorAll('.lazy-bg').forEach(section => {
+            lazyBgObserver.observe(section);
+        });
+
+        const mapContainer = document.getElementById('map-container');
+        const mapObserver = new IntersectionObserver((entries, observer) => {
+            if (entries[0].isIntersecting) {
+                const iframe = document.createElement('iframe');
+                iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1957.930419409852!2d5.2815!3d60.8165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463da5a331136297%3A0x6a05b3859654f7a1!2sFjordblikk!5e0!3m2!1sen!2sno!4v1695297890123!5m2!1sen!2sno";
+                iframe.width = "600";
+                iframe.height = "450";
+                iframe.style.border = "0";
+                iframe.allowfullscreen = "";
+                iframe.loading = "lazy";
+                iframe.referrerpolicy="no-referrer-when-downgrade";
+                mapContainer.appendChild(iframe);
+                observer.unobserve(mapContainer);
+            }
+        }, { rootMargin: '0px 0px 200px 0px' });
+        mapObserver.observe(mapContainer);
+
+        // --- Header scroll-effekt ---
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // --- Navigasjon active state ---
+        const navLinks = document.querySelectorAll('.main-nav a');
+        const sections = document.querySelectorAll('main section');
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href').substring(1) === entry.target.id);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+        sections.forEach(section => navObserver.observe(section));
+
+
+        // --- Hero 3D Parallax-effekt ---
+        const heroWrapper = document.querySelector('.hero-image-wrapper');
+        if(heroWrapper) {
+            document.getElementById('hjem').addEventListener('mousemove', (e) => {
+                if (window.innerWidth < 1024) return; // Deaktiver på mobil
+                const { clientX, clientY } = e;
+                const { offsetWidth, offsetHeight } = heroWrapper;
+                const x = (clientX / offsetWidth - 0.5) * 30; // Tilt-faktor
+                const y = (clientY / offsetHeight - 0.5) * 30;
+                heroWrapper.style.transform = `rotateY(${x}deg) rotateX(${-y}deg) translateZ(-50px) scale(1.1)`;
+            });
+        }
+
+        // --- FAQ Accordion ---
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const answer = btn.nextElementSibling;
+                const isActive = btn.classList.contains('active');
+
+                // Lukk alle andre
+                faqQuestions.forEach(otherBtn => {
+                    otherBtn.classList.remove('active');
+                    otherBtn.nextElementSibling.style.maxHeight = null;
+                    otherBtn.nextElementSibling.style.padding = "0 1.5rem 0";
+                });
+
+                // Åpne den klikkede
+                if (!isActive) {
+                    btn.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    answer.style.padding = "0 1.5rem 1.5rem";
+                }
+            });
+        });
+
+        // --- Booking Modul Logikk ---
+        const bookingModule = document.getElementById('booking-module');
+        if (bookingModule) {
+            const steps = document.querySelectorAll('.booking-step');
+            const toStep2Btn = document.getElementById('to-step2-btn');
+            const backToStep1Btn = document.getElementById('back-to-step1-btn');
+            const bookingForm = document.getElementById('booking-form');
+            const confirmationMessage = document.getElementById('confirmation-message');
+            
+            let selectedDate = null;
+            
+            // Kalender-logikk
+            const monthYearEl = document.getElementById('month-year');
+            const daysEl = document.getElementById('calendar-days');
+            const prevMonthBtn = document.getElementById('prev-month');
+            const nextMonthBtn = document.getElementById('next-month');
+            
+            let currentDate = new Date();
+            // Placeholder for opptatte datoer. Hentes normalt fra et API.
+            const bookedDates = ['2025-08-15', '2025-08-22', '2025-09-05'];
+
+            const renderCalendar = () => {
+                const month = currentDate.getMonth();
+                const year = currentDate.getFullYear();
+                
+                monthYearEl.textContent = `${currentDate.toLocaleString('no-NO', { month: 'long' })} ${year}`;
+                
+                daysEl.innerHTML = '';
+                
+                const firstDayOfMonth = new Date(year, month, 1).getDay();
+                const daysInMonth = new Date(year, month + 1, 0).getDate();
+                
+                // Korrigerer for at getDay() gir 0 for søndag
+                const startDay = firstDayOfMonth === 0 ? 6 : firstDayOfMonth - 1;
+                
+                for(let i = 0; i < startDay; i++) {
+                    const emptyDiv = document.createElement('div');
+                    emptyDiv.classList.add('calendar-day', 'empty');
+                    daysEl.appendChild(emptyDiv);
+                }
+                
+                for(let i = 1; i <= daysInMonth; i++) {
+                    const dayDiv = document.createElement('div');
+                    dayDiv.classList.add('calendar-day');
+                    dayDiv.textContent = i;
+                    
+                    const today = new Date();
+                    today.setHours(0,0,0,0);
+                    const thisDate = new Date(year, month, i);
+                    const thisDateStr = thisDate.toISOString().split('T')[0];
+
+                    if (thisDate < today || bookedDates.includes(thisDateStr)) {
+                        dayDiv.classList.add('disabled');
+                    } else {
+                        dayDiv.addEventListener('click', () => {
+                            if (selectedDate) {
+                                selectedDate.classList.remove('selected');
+                            }
+                            selectedDate = dayDiv;
+                            dayDiv.classList.add('selected');
+                            toStep2Btn.disabled = false;
+                            document.getElementById('summary-date').textContent = thisDate.toLocaleDateString('no-NO');
+                        });
+                    }
+
+                    if (selectedDate && parseInt(selectedDate.textContent) === i && selectedDate.parentElement === daysEl) {
+                        dayDiv.classList.add('selected');
+                    }
+                    
+                    daysEl.appendChild(dayDiv);
+                }
+            };
+
+            prevMonthBtn.addEventListener('click', () => {
+                currentDate.setMonth(currentDate.getMonth() - 1);
+                renderCalendar();
+            });
+
+            nextMonthBtn.addEventListener('click', () => {
+                currentDate.setMonth(currentDate.getMonth() + 1);
+                renderCalendar();
+            });
+
+            // Navigasjon mellom steg
+            const goToStep = (stepNum) => {
+                steps.forEach(step => step.classList.remove('active'));
+                document.getElementById(`step${stepNum}`).classList.add('active');
+            };
+
+            toStep2Btn.addEventListener('click', () => {
+                if (selectedDate) {
+                    goToStep(2);
+                }
+            });
+
+            backToStep1Btn.addEventListener('click', () => goToStep(1));
+
+            // Skjemahåndtering
+            bookingForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const serviceID = '[[SERVICE_ID]]'; // Placeholder
+                const templateID = '[[TEMPLATE_ID]]'; // Placeholder
+
+                // CONFIDENTIAL MODULE: E-post-sending
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        console.log('Førespurnad sendt!');
+                        bookingModule.style.display = 'none';
+                        confirmationMessage.style.display = 'block';
+
+                        // DataLayer-event for fullført booking
+                        dataLayer.push({
+                            'event': 'booking_completed',
+                            'booking_date': document.getElementById('summary-date').textContent
+                        });
+
+                    }, (err) => {
+                        alert('Noko gjekk gale. Prøv igjen seinare.\nFeil: ' + JSON.stringify(err));
+                    });
+            });
+
+            renderCalendar();
+        }
+
+        // --- Sticky CTA dataLayer push ---
+        const stickyCta = document.querySelector('.sticky-cta');
+        if (stickyCta) {
+            stickyCta.addEventListener('click', () => {
+                dataLayer.push({
+                    'event': 'cta_click',
+                    'cta_type': 'sticky_booking_button'
+                });
+            });
+        }
+        
+        const heroCta = document.querySelector('#hjem .btn');
+         if (heroCta) {
+            heroCta.addEventListener('click', () => {
+                dataLayer.push({
+                    'event': 'cta_click',
+                    'cta_type': 'hero_booking_button'
+                });
+            });
+        }
+
+        // --- Kommentarer for manglende filer ---
+        /*
+        robots.txt:
+        Denne filen bør plassers i roten av domenet (public_html/robots.txt)
+        Innhold:
+        User-agent: *
+        Allow: /
+        Sitemap: [[KANONISK_URL]]/sitemap.xml
+        */
+
+        /*
+        sitemap.xml:
+        Denne filen bør genereres og plasseres i roten (public_html/sitemap.xml)
+        Den bør inneholde lenker til alle hovedseksjonene for best indeksering.
+        Eksempel:
+        <?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <url>
+            <loc>[[KANONISK_URL]]</loc>
+            <lastmod>2025-07-24</lastmod>
+            <priority>1.00</priority>
+          </url>
+           <url>
+            <loc>[[KANONISK_URL]]#opplevelse</loc>
+            <priority>0.80</priority>
+          </url>
+          ... etc for alle seksjoner
+        </urlset>
+        */
+
+    });
+    </script>
 </body>
 </html>
